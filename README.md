@@ -63,7 +63,7 @@ o Support leaves more to be desired
 ### Debian (**Unless you use Debian Testing/Sid**)
 Despite being extremely stable with little to no breakages, it is not suitable for legion laptops. Updates (especially MAJOR ones) are released very slowly. You can use it if you know what you are doing.
 ### Pop!_OS (**for now**)
-Ships an outdated version of Gnome, which has a lot of regressions and bugs for gaming and day-to-day usage. Some libraries and system packages are also outdated or buggy, especially Pop!_Shop. The new Cosmic desktop variant lacks critical fixes for gaming and it is still in alpha.
+The new Cosmic desktop variant lacks critical fixes for gaming and it is still in alpha.
 ### SteamOS 
 Doesn't have an nvidia alternative and is not finished for **non-handheld devices**. If you REALLY need something similar, use Bazzite.
 ### Manjaro
@@ -216,11 +216,9 @@ Some screen panels will force you to use either the highest or the lowest refres
 2. Copy the file to a usb drive and boot back to linux.
 3. Open a terminal and type the following commands:
 ```cd /lib/firmware && sudo mkdir edid && sudo cp (path to file)/edid.bin /lib/firmware/edid```
-4. To make sure your edid file is recognized, use the following:
-replace {display_id} with the id from the previous command's output (eDP-1 for example)
-### Get the display ID
+4. To make sure your edid file is recognized, use the following:   
 ```for p in /sys/class/drm/*/status; do con=${p%/status}; echo -n "${con#*/card?-}: "; cat $p; done```
-
+   
 For the below commands, replace [display_id] with the output of the connected display from the command ran earlier.
 ### For systemd-boot
 ```sudo kernelstub -a 'drm.edid_firmware={display_id}:edid/edid.bin video={display_id}:e'```
