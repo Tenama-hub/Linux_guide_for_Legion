@@ -191,36 +191,23 @@ A simple, easy to use and straight-forward wine frontend.
 Formerly PortWINE. It's simple to use, can auto-install game launchers and has enough configuration tools. There are some trust issues (mainly the dev is Russian, take that how you will), doesn't allow custom wine launch options, apps start slower than the competition and some options are counter-intuitive.
 
 # __NVIDIA fixes__
-W.I.P
+All of these parameters need to be put in your bootloader config file (GRUB/Systemd/Limine etc)
+- Fix Wayland performance/smoothness. May not fully fix it, but it's worth a shot.   
+  ```nvidia-drm.modeset=1 nvidia-drm.fbdev=1```
+- Fix Nvidia card not powering down (There is a regression in the driver 590, making this fix useless for now)
+  ```nvidia.NVreg_EnableGpuFirmware=0```
+- Fix sleep/suspend issues showing screen artefacts or other problems   
+  ```nvidia.NVreg_PreserveVideoMemoryAllocations=1```
 
 # __General bugs and fixes__
+### System swappiness (if you have >= 16GB ram)
+Setting your swappiness to 10 will reduce stuttering when your RAM memory is almost full, as the system will not prioritize using your SWAP partition as system memory for apps.   
+```sudo nano /etc/sysctl.conf```
+Add ```vm.swappiness=10``` Then save. (ctrl+O then hit enter)
 ### Bad speakers quality 
 If your speakers sound shallow and bad, try out [this preset](https://github.com/Tomiscout/Lenovo-Legion-5-Pro-Linux-guide/tree/main/easyeffects)
 ### Bad laptop mic quality
 Set your microphone volume to 30-50%, then install this [noise cancelling module](https://github.com/Rikorose/DeepFilterNet/blob/main/ladspa/README.md) or use EasyEffects
-### Dynamic Boost on NVIDIA gpu (if needed)
-1. Enable powerd by typing the following command:
-```sudo systemctl enable nvidia-powerd.service && sudo systemctl start nvidia-powerd.service```
-If your distro doesn't have nvidia-powerd after installing the nvidia drivers, then run this command:
-replace xxx with the version number on the driver name (nvidia-driver-550)
-```
-sudo cp /usr/share/doc/nvidia-driver-xxx/nvidia-dbus.conf /etc/dbus-1/system.d/ && sudo cp /usr/share/doc/nvidia-kernel-common-xxx/nvidia-powerd.service /etc/systemd/system/
-```
-2. If you use power-profiles-daemon/tuned, switch to performance mode.
-### ACPI errors
-__This may not fully fix the acpi errors.__
-Type the following command:
-```
-# For systemd-boot
-sudo kernelstub -a 'acpi_osi="Linux"'
-
-# For GRUB
-sudo nano /etc/default/grub
-GRUB_CMDLINE_LINUX_DEFAULT='... acpi_osi="Linux"'
-sudo grub2-mkconfig -o /boot/grub2/grub.cfg
-```
-**Reboot!**
-If this doesn't fix your issue, change **"linux"** to **"!Windows2020"**
 ### Refresh rate/ VRR not working
 Some screen panels will force you to use either the highest or the lowest refresh rate (even keep you at the highest resolution). Edid.bin tells your screen what resolutions and refresh rates it supports. This is a problem that affects some panels due to generic drivers being used instead of the ones provided by the screen providers.
 ### WARNING
@@ -243,7 +230,8 @@ For the below commands, replace [display_id] with the output of the connected di
 Then run either ```sudo update-grub``` or ```sudo grub2-mkconfig -o /boot/grub2/grub.cfg```
 Reboot.   
 For Immutable/atomic distros based on Fedora( e.g. Bazzite), use the following:
-```sudo mkdir -p /etc/firmware/edid
+```
+sudo mkdir -p /etc/firmware/edid
 sudo cp edid.bin /etc/firmware/edid
 sudo rpm-ostree kargs --append-if-missing=drm.edid_firmware={display_id}:edid/edid.bin
 sudo rpm-ostree kargs --append-if-missing=video={display_id}:e
