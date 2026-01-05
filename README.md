@@ -3,15 +3,15 @@
 A simple how-to-guide for legion products. Can be universal if you know what you are doing. A little opinionated, but it was made with the purpose of making linux easy-to-use and simple for Windows migrants or linux newbies. A backup of my guide from the Legion discord, just in case :)   
 Contribution is always welcomed! Feel free to join our [discord group as well](https://discord.gg/yGkfEUVa). 
 # Table of contents
-### [Distribution recommendation](https://github.com/Tenama-hub/Linux_guide_for_Legion_laptops_-_handhelds/edit/main/README.md#distribution-recommendation-1)
-### [Installing Legion tools and drivers](https://github.com/Tenama-hub/Linux_guide_for_Legion_laptops_-_handhelds/edit/main/README.md#distribution-recommendation-1)
-### [Apps & Tools recommendation](https://github.com/Tenama-hub/Linux_guide_for_Legion_laptops_-_handhelds/edit/main/README.md#distribution-recommendation-1)
-### [Battery saving tools](https://github.com/Tenama-hub/Linux_guide_for_Legion_laptops_-_handhelds/edit/main/README.md#battery-saving-tools-1)
-### [Switchable Graphics](https://github.com/Tenama-hub/Linux_guide_for_Legion_laptops_-_handhelds/edit/main/README.md#switchable-graphics-1)
-### [Wine front-ends](https://github.com/Tenama-hub/Linux_guide_for_Legion_laptops_-_handhelds/edit/main/README.md#wine-front-ends-1)
-### [NVIDIA fixes](https://github.com/Tenama-hub/Linux_guide_for_Legion_laptops_-_handhelds/edit/main/README.md#nvidia-fixes-1)
-### [General bugs and fixes](https://github.com/Tenama-hub/Linux_guide_for_Legion_laptops_-_handhelds/edit/main/README.md#general-advice-and-websites-recommendation-1)
-### [General advice and websites recommendation](https://github.com/Tenama-hub/Linux_guide_for_Legion_laptops_-_handhelds/edit/main/README.md#general-advice-and-websites-recommendation-1)
+### [Distribution recommendation](https://github.com/Tenama-hub/Linux_guide_for_Legion_laptops_-_handhelds/tree/main?tab=readme-ov-file#distribution-recommendation-1)
+### [Installing Legion tools and drivers](https://github.com/Tenama-hub/Linux_guide_for_Legion_laptops_-_handhelds/tree/main?tab=readme-ov-file#installing-legion-tools-and-drivers-1)
+### [Apps & Tools recommendation](https://github.com/Tenama-hub/Linux_guide_for_Legion_laptops_-_handhelds/tree/main?tab=readme-ov-file#app--tools-recommendation)
+### [Battery saving tools](https://github.com/Tenama-hub/Linux_guide_for_Legion_laptops_-_handhelds/tree/main?tab=readme-ov-file#battery-saving-tools-1)
+### [Switchable Graphics](https://github.com/Tenama-hub/Linux_guide_for_Legion_laptops_-_handhelds/tree/main?tab=readme-ov-file#switchable-graphics-1)
+### [Wine front-ends](https://github.com/Tenama-hub/Linux_guide_for_Legion_laptops_-_handhelds/tree/main?tab=readme-ov-file#wine-front-ends-1)
+### [NVIDIA fixes](https://github.com/Tenama-hub/Linux_guide_for_Legion_laptops_-_handhelds/tree/main?tab=readme-ov-file#nvidia-fixes-1)
+### [General bugs and fixes](https://github.com/Tenama-hub/Linux_guide_for_Legion_laptops_-_handhelds/tree/main?tab=readme-ov-file#general-bugs-and-fixes-1)
+### [General advice and websites recommendation](https://github.com/Tenama-hub/Linux_guide_for_Legion_laptops_-_handhelds/tree/main?tab=readme-ov-file#general-advice-and-websites-recommendation-1)
 
 # __Distribution recommendation__
 Based on my own experience + community feedback. You are not forced to follow this recommended list.
