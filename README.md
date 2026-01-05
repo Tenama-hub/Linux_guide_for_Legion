@@ -8,7 +8,6 @@ Contribution is always welcomed! Feel free to join our [discord group as well](h
 ### [Apps & Tools recommendation](https://github.com/Tenama-hub/Linux_guide_for_Legion/tree/main?tab=readme-ov-file#app--tools-recommendation)
 ### [Battery saving tools](https://github.com/Tenama-hub/Linux_guide_for_Legion/tree/main?tab=readme-ov-file#battery-saving-tools-1)
 ### [Wine front-ends](https://github.com/Tenama-hub/Linux_guide_for_Legion/tree/main?tab=readme-ov-file#wine-front-ends-1)
-### [NVIDIA fixes](https://github.com/Tenama-hub/Linux_guide_for_Legion/tree/main?tab=readme-ov-file#nvidia-fixes-1)
 ### [General bugs and fixes](https://github.com/Tenama-hub/Linux_guide_for_Legion/tree/main?tab=readme-ov-file#general-bugs-and-fixes-1)
 ### [General advice and websites recommendation](https://github.com/Tenama-hub/Linux_guide_for_Legion/tree/main?tab=readme-ov-file#general-advice-and-websites-recommendation-1)
 
@@ -172,15 +171,6 @@ Allows creating separate prefixes for each use case. Can auto install game launc
 A simple, easy to use and straight-forward wine frontend.
 ### [Port-Proton](https://github.com/Castro-Fidel/PortWINE)
 Formerly PortWINE. It's simple to use, can auto-install game launchers and has enough configuration tools. There are some trust issues (mainly the dev is Russian, take that how you will), doesn't allow custom wine launch options, apps start slower than the competition and some options are counter-intuitive.
-
-# __NVIDIA fixes__
-All of these parameters need to be put in your bootloader config file (GRUB/Systemd/Limine etc)
-- Fix Wayland performance/smoothness. May not fully fix it, but it's worth a shot.   
-  ```nvidia-drm.modeset=1 nvidia-drm.fbdev=1```
-- Fix Nvidia card not powering down (There is a regression in the driver 590, making this fix useless for now)
-  ```nvidia.NVreg_EnableGpuFirmware=0```
-- Fix sleep/suspend issues showing screen artefacts or other problems   
-  ```nvidia.NVreg_PreserveVideoMemoryAllocations=1```
 
 # __General bugs and fixes__
 ### System swappiness (if you have >= 16GB ram)
