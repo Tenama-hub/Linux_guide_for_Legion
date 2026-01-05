@@ -19,24 +19,24 @@ Based on my own experience + community feedback. You are not forced to follow th
 * Comes with many useful tools OOTB
 * Customizable touchpad gestures like on Windows (Cinnamon only)
 * Fantastic for daily use, especially for beginners
-* Stable release distribution
-o Lags behind some of the newer technologies and packages. May cause issues on newer legion laptops
+* Stable release distribution   
+o Lags behind some of the newer technologies and packages. May cause issues on newer legion laptops   
 o Still uses X11, which is behind certain modern features (dual screens may not work as intended for example)
 ### Fedora ([Post-Install Guide](https://github.com/Tenama-hub/Linux_guide_for_Legion_laptops_-_handhelds/blob/main/fedora_post_install_guide.md))
 * Comes with Gnome/Plasma by default. Offers different flavors of desktops too
 * Power saving tools pre-installed
 * Offers the "vanilla" experience that desktop developers have envisioned
 * Solid for gaming and general use
-* Semi-Rolling release distribution
-o Codecs & Nvidia drivers are not pre-installed
+* Semi-Rolling release distribution    
+o Codecs & Nvidia drivers are not pre-installed   
 o Requires a little knowledge and maintanence when necessary due to it being semi-rolling
 ### Ubuntu ([Post-install guide](https://github.com/Tenama-hub/Linux_guide_for_Legion_laptops_-_handhelds/blob/main/ubuntu_post_install_guide.md))
 - Comes with Gnome by default. Can use other variants with different desktops
 - Pre-install Nvidia drivers and codecs during the installation process
 - Pretty good documentation & huge active base
 - Great for daily use
-- Offers both a rolling release model or LTS
-o Prioritizes Snaps over any other package formats and may have their own issues (depending on the app). You can still use Debs, Appimages (install GearLever) or Flatpaks (install Warehouse from Flathub) as alternatives
+- Offers both a rolling release model or LTS   
+o Prioritizes Snaps over any other package formats and may have their own issues (depending on the app). You can still use Debs, Appimages (install GearLever) or Flatpaks (install Warehouse from Flathub) as alternatives   
 o System issues may occur on non-LTS versions
 ### CachyOS
 - Comes with Plasma by default. Can choose a different desktop during installation
@@ -44,9 +44,9 @@ o System issues may occur on non-LTS versions
 - Packages are optimized based on your hardware, which might increase performance and smoothness
 - GUI package manager and small tools to get you up and running
 - Can convert existing arch distributions (EndeavourOS/Arch) to CachyOS
-- Rolling release distribution
-o Package optimizations don't apply to Flatpaks/AppImages/Snaps(main reason why they aren't preinstalled)
-o Not suitable for beginners/those that don't want to rely on the terminal most of the time
+- Rolling release distribution   
+o Package optimizations don't apply to Flatpaks/AppImages/Snaps(main reason why they aren't preinstalled)   
+o Not suitable for beginners/those that don't want to rely on the terminal most of the time   
 o Requires a in-depth knowledge of Arch Linux
 ### Bazzite
 - Comes with Plasma/Gnome by default
@@ -54,9 +54,9 @@ o Requires a in-depth knowledge of Arch Linux
 - Can be used for any use case, not just gaming
 - Great alternative to SteamOS for handhelds
 - Very hard to break and requires little to no maintenance due to its atomic nature
-- Atomic distribution based on Fedora. Updates can be done in the background and are relatively quick
-o Apps can only be installed through Flatpaks, AppImages, HomeBrew and Distrobox
-o You cannot do system-level changes like on traditional distros
+- Atomic distribution based on Fedora. Updates can be done in the background and are relatively quick   
+o Apps can only be installed through Flatpaks, AppImages, HomeBrew and Distrobox   
+o You cannot do system-level changes like on traditional distros   
 o Support leaves more to be desired
 ### ***AVOID!***
 ### Debian (**Unless you use Debian Testing/Sid**)
