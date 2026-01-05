@@ -195,7 +195,7 @@ W.I.P
 
 # __General bugs and fixes__
 ### Bad speakers quality 
-If your speakers sound shallow and bad, try out [this preset](https://discord.com/channels/761178912230473768/1159412133117833286/1395374565776953365)
+If your speakers sound shallow and bad, try out [this preset](https://github.com/Tomiscout/Lenovo-Legion-5-Pro-Linux-guide/tree/main/easyeffects)
 ### Bad laptop mic quality
 Set your microphone volume to 30-50%, then install this [noise cancelling module](https://github.com/Rikorose/DeepFilterNet/blob/main/ladspa/README.md) or use EasyEffects
 ### Dynamic Boost on NVIDIA gpu (if needed)
