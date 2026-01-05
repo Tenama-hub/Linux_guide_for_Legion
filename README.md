@@ -31,6 +31,14 @@ o Still uses X11, which is behind certain modern features (dual screens may not 
 * Semi-Rolling release distribution
 o Codecs & Nvidia drivers are not pre-installed
 o Requires a little knowledge and maintanence when necessary due to it being semi-rolling
+### Ubuntu ([Post-install guide](https://github.com/Tenama-hub/Linux_guide_for_Legion_laptops_-_handhelds/blob/main/ubuntu_post_install_guide.md))
+- Comes with Gnome by default. Can use other variants with different desktops
+- Pre-install Nvidia drivers and codecs during the installation process
+- Pretty good documentation & huge active base
+- Great for daily use
+- Offers both a rolling release model or LTS
+o Prioritizes Snaps over any other package formats and may have their own issues (depending on the app). You can still use Debs, Appimages (install GearLever) or Flatpaks (install Warehouse from Flathub) as alternatives
+o System issues may occur on non-LTS versions
 ### CachyOS
 - Comes with Plasma by default. Can choose a different desktop during installation
 - Nvidia drivers pre-installed and pre-configured
@@ -41,14 +49,6 @@ o Requires a little knowledge and maintanence when necessary due to it being sem
 o Package optimizations don't apply to Flatpaks/AppImages/Snaps(main reason why they aren't preinstalled)
 o Not suitable for beginners/those that don't want to rely on the terminal most of the time
 o Requires a in-depth knowledge of Arch Linux
-### Ubuntu ([Post-install guide](https://github.com/Tenama-hub/Linux_guide_for_Legion_laptops_-_handhelds/blob/main/ubuntu_post_install_guide.md))
-- Comes with Gnome by default. Can use other variants with different desktops
-- Pre-install Nvidia drivers and codecs during the installation process
-- Pretty good documentation & huge active base
-- Great for daily use
-- Offers both a rolling release model or LTS
-o Prioritizes Snaps over any other package formats and may have their own issues (depending on the app). You can still use Debs, Appimages (install GearLever) or Flatpaks (install Warehouse from Flathub) as alternatives
-o System issues may occur on non-LTS versions
 ### Bazzite
 - Comes with Plasma/Gnome by default
 - Pre-installed Steam, Nvidia drivers and codecs
@@ -78,9 +78,9 @@ Avoid distributions maintained by randoms/single developer, that are **"too good
 Do keep in mind you won't have any guarantee they won't die off in the future or have support outside their forums. They also come with issues of their own (unorthodox way of handling packages, kernel problems, questionable community, very low amount of maintainers etc). Some example of such distros are Nobara, RegataOS, Garuda, ZorinOS, PikaOS etc.
 
 # __Installing Legion tools and drivers__ 
-### **As of Kernel 6.17, power profiles switching and battery conservation don't require the Legion Driver.**
-This allows you to use most, if not all the legion exclusive features on linux (fan control, panel overdrive, etc). Comes with a GUI to easily access these said features.
-If you use Plasma and you want to have a tool that gives you the important options at a glance, I recommend using [PlasmaVantage](https://gitlab.com/Scias/plasmavantage) or Cinnamon's inspired counterpart from the [desktop plugin store](https://cinnamon-spices.linuxmint.com/applets/view/395)
+### **As of Kernel 6.17, power profiles switching and battery conservation don't require the Legion Driver.**   
+This allows you to use most, if not all the legion exclusive features on linux (fan control, panel overdrive, etc). Comes with a GUI to easily access these said features.   
+If you use Plasma and you want to have a tool that gives you the important options at a glance, I recommend using [PlasmaVantage](https://gitlab.com/Scias/plasmavantage) or Cinnamon's inspired counterpart from the [desktop plugin store](https://cinnamon-spices.linuxmint.com/applets/view/395)   
 ## Distro packages (highly recommended)
 - [**Debian/Ubuntu**](https://github.com/MrDuartePT/pacstall-programs/tree/lll-repo)
 - [**Fedora**](https://copr.fedorainfracloud.org/coprs/mrduarte/LenovoLegionLinux/)
@@ -95,7 +95,7 @@ If you use Plasma and you want to have a tool that gives you the important optio
 ## Manual Install Module
 The project's [github page](https://github.com/johnfanv2/LenovoLegionLinux?tab=readme-ov-file#bulb-instructions) should give you enough instructions to aid you in the process.
 After it's done, to check if module is built and installed correctly, enter the following command
-```sudo lsmod |grep legion_laptop```
+```sudo lsmod |grep legion_laptop```.
 The output should show that legion_laptop and platform profile modules are loaded.
 
 # __App & Tools recommendation__
@@ -112,7 +112,6 @@ Manage Flatpak permissions. Useful for non-KDE Plasma distributions.
 ### [GearLever](https://flathub.org/en/apps/it.mijorus.gearlever)
 Front-end Appimage manager. Allows "installing" said packages, without needing to fetch them in the file manager.
 # __Battery saving tools__
-Battery life on linux is not great, as it was not optimized for all hardware. This section will help you increase battery and get it on par with windows or even better. 
 The tool that comes bundled with your distribution of choice should be good enough.
 ### WARNING
 * Some of the tools will not work together with the rest (exceptions may apply). Make sure you remove all the tools besides the one you want to currently use.
@@ -124,7 +123,7 @@ A mix between power profiles daemon and TLP. Easily integrated with all desktops
 Used in majority of distros. Plays well with pstate scalers and any hardware in general. Not as powerful as TLP but it gets the job done. Conflicts with the rest of the tools besides powertop
 [More info](https://gitlab.freedesktop.org/upower/power-profiles-daemon)
 ### TLP 
-A shell script that applies extensive configurations based on battery or AC. Will cause issues if incorrectly configured. Conflicts with other tools.
+A shell script that applies extensive configurations based on battery or AC. Will cause issues if incorrectly configured. Conflicts with other tools.   
 Install instructions:
 - **Debian/Ubuntu**:
 ```sudo apt install tlp```
@@ -132,10 +131,10 @@ Install instructions:
 ```sudo dnf install tlp```
 - **Arch Linux**:
 ```sudo pacman -S tlp```
-For easier tool access, [install the gui version](https://github.com/d4nj1/TLPUI)
+For easier tool access, [install the gui version](https://github.com/d4nj1/TLPUI)   
 
-After that we can configure TLP.
-Open TLPUI and change your settings(Strictly optional. Default settings are fine) . Enable the tool by typing in terminal:
+After that we can configure TLP.   
+Open TLPUI and change your settings(Strictly optional. Default settings are fine) . Enable the tool by typing in terminal:   
 ```sudo systemctl enable tlp.service && sudo systemctl start tlp.service```
 ### Auto-Cpufreq
 A simple script that changes how the cpu should scale depending if you are on AC or Battery. Plays well with pstate, but it may cause issues with some hardware.
@@ -145,7 +144,7 @@ Install instructions:
 - **Fedora**:
 ```git clone https://github.com/adnanhodzic/auto-cpufreq.git && cd auto-cpufreq && sudo ./auto-cpufreq-installer```
 - **Arch Linux**:
-```sudo pacman -S auto-cpufreq```
+```sudo pacman -S auto-cpufreq```   
 [More Info](https://github.com/AdnanHodzic/auto-cpufreq/tree/fdb20f5ea2f94ed9146299b87ad03dc1f64c79ec#auto-cpufreq-installer)
 ### Powertop 
 A shell script tool that allows you to optimize some parts of the hardware to go on a low power state when not in use. I'd recommend using it only to check your power draw, as the optimization feature is already applied by other power saving tools.
@@ -156,9 +155,10 @@ Install instructions:
 ```sudo dnf install powertop```
 - **Arch Linux**:
 ```sudo pacman -S powertop```
-After installing it, you can use the app by typing :
-```sudo powertop```
-If you want to use it to optimize the hardware power usage (power-profiles/auto-cpufreq ONLY), run this command:
+
+After installing it, you can use the app by typing:   
+```sudo powertop```   
+If you want to use it to optimize the hardware power usage (power-profiles/auto-cpufreq ONLY), run this command:   
 ```sudo powertop --calibrate && sudo powertop --auto-tune```
 
 # __Switchable graphics__
@@ -205,7 +205,7 @@ Setting your swappiness to 10 will reduce stuttering when your RAM memory is alm
 ```sudo nano /etc/sysctl.conf```
 Add ```vm.swappiness=10``` Then save. (ctrl+O then hit enter)
 ### Bad speakers quality 
-If your speakers sound shallow and bad, try out [this preset](https://github.com/Tomiscout/Lenovo-Legion-5-Pro-Linux-guide/tree/main/easyeffects)
+If your speakers sound shallow and bad, try out [this preset](https://github.com/Tomiscout/Lenovo-Legion-5-Pro-Linux-guide/tree/main/easyeffects) (I might tweak it to not require easyeffects. Stay tuned!). If you use handhelds, [better give this one a try](https://www.reddit.com/r/LegionGo/comments/1m7632y/legion_go_s_steam_os_audio_fix_pipewire_eq/).
 ### Bad laptop mic quality
 Set your microphone volume to 30-50%, then install this [noise cancelling module](https://github.com/Rikorose/DeepFilterNet/blob/main/ladspa/README.md) or use EasyEffects
 ### Refresh rate/ VRR not working
