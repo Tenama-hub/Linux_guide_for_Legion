@@ -7,8 +7,8 @@ Cherry-picked from [this website](https://rpmfusion.org/Howto). Honorable mentio
 ### Enable full flatpak access (non-filtered version that isn't bundled by default on Fedora)
 ```flatpak remote-delete fedora && flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo```
 ### Install Nvidia drivers
-This can be easily done through the provided package manager.
-If you can't do it for some reason, install the driver by using the command below, then wait 10-15 minutes before rebooting.
+This can be easily done through the provided package manager. If you want to use secure boot, please [check this guide before continuing!](https://github.com/roworu/nvidia-fedora-secureboot)
+If you can't do it for some reason, install the driver by using the command below, then wait 10-15 minutes before rebooting!!!
 ```sudo dnf install akmod-nvidia xorg-x11-drv-nvidia-cuda -y```
 ### Install additional codecs
 ```dnf swap ffmpeg-free ffmpeg --allowerasing -y && dnf update @multimedia --setopt="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin -y && dnf update @sound-and-video -y ```
