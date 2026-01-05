@@ -74,7 +74,7 @@ Parrot, Tails, Kali Linux and alike are meant to be used either through VMs or e
 ### Obscure/outdated distributions
 Avoid distributions maintained by randoms/single developer, that are **"too good to be true"** (nonsense promises) or try to replicate Windows 1:1. 
 ### Hobby/niche distributions
-Do keep in mind you won't have any guarantee they won't die off in the future or have support outside their forums. They also come with issues of their own (unorthodox way of handling packages, kernel problems, questionable community, very low amount of maintainers etc). Some example of such distros are Nobara, RegataOS, Garuda, ZorinOS, PikaOS etc.
+Do keep in mind you won't have any guarantee they won't die off in the future or have support outside their forums. They also come with issues of their own (unorthodox way of handling packages, low-quality in-house tools, kernel problems, questionable community, very low amount of maintainers etc). Some example of such distros are Nobara, RegataOS, Garuda, ZorinOS, PikaOS etc.
 
 # __Installing Legion tools and drivers__ 
 ### **As of Kernel 6.17, power profiles switching and battery conservation don't require the Legion Driver.**   
@@ -123,7 +123,6 @@ Used in majority of distros. Plays well with pstate scalers and any hardware in 
 [More info](https://gitlab.freedesktop.org/upower/power-profiles-daemon)
 ### TLP 
 A shell script that applies extensive configurations based on battery or AC. Will cause issues if incorrectly configured. Conflicts with other tools.   
-Install instructions:
 - **Debian/Ubuntu**:
 ```sudo apt install tlp```
 - **Fedora**:
@@ -137,7 +136,6 @@ Open TLPUI and change your settings(Strictly optional. Default settings are fine
 ```sudo systemctl enable tlp.service && sudo systemctl start tlp.service```
 ### Auto-Cpufreq
 A simple script that changes how the cpu should scale depending if you are on AC or Battery. Plays well with pstate, but it may cause issues with some hardware.
-Install instructions:
 - **Debian/Ubuntu**:
 ```git clone https://github.com/adnanhodzic/auto-cpufreq.git && cd auto-cpufreq && sudo ./auto-cpufreq-installer```
 - **Fedora**:
@@ -147,7 +145,6 @@ Install instructions:
 [More Info](https://github.com/AdnanHodzic/auto-cpufreq/tree/fdb20f5ea2f94ed9146299b87ad03dc1f64c79ec#auto-cpufreq-installer)
 ### Powertop 
 A shell script tool that allows you to optimize some parts of the hardware to go on a low power state when not in use. I'd recommend using it only to check your power draw, as the optimization feature is already applied by other power saving tools.
-Install instructions:
 - **Debian/Ubuntu**:
 ```sudo apt install powertop```
 - **Fedora**:
