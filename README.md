@@ -128,7 +128,7 @@ A shell script that applies extensive configurations based on battery or AC. Wil
 - **Fedora**:
 ```sudo dnf install tlp```
 - **Arch Linux**:
-```sudo pacman -S tlp```
+```sudo pacman -S tlp```   
 For easier tool access, [install the gui version](https://github.com/d4nj1/TLPUI)   
 
 After that we can configure TLP.   
