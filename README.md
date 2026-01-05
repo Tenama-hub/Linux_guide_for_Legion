@@ -128,9 +128,9 @@ A shell script that applies extensive configurations based on battery or AC. Wil
 - **Fedora**:
 ```sudo dnf install tlp```
 - **Arch Linux**:
-```sudo pacman -S tlp```   
+```sudo pacman -S tlp```
+   
 For easier tool access, [install the gui version](https://github.com/d4nj1/TLPUI)   
-
 After that we can configure TLP.   
 Open TLPUI and change your settings(Strictly optional. Default settings are fine) . Enable the tool by typing in terminal:   
 ```sudo systemctl enable tlp.service && sudo systemctl start tlp.service```
@@ -141,7 +141,8 @@ A simple script that changes how the cpu should scale depending if you are on AC
 - **Fedora**:
 ```git clone https://github.com/adnanhodzic/auto-cpufreq.git && cd auto-cpufreq && sudo ./auto-cpufreq-installer```
 - **Arch Linux**:
-```sudo pacman -S auto-cpufreq```   
+```sudo pacman -S auto-cpufreq```
+   
 [More Info](https://github.com/AdnanHodzic/auto-cpufreq/tree/fdb20f5ea2f94ed9146299b87ad03dc1f64c79ec#auto-cpufreq-installer)
 ### Powertop 
 A shell script tool that allows you to optimize some parts of the hardware to go on a low power state when not in use. I'd recommend using it only to check your power draw, as the optimization feature is already applied by other power saving tools.
