@@ -14,7 +14,7 @@ Contribution is always welcomed! Feel free to join our [discord group as well](h
 
 # __Distribution recommendation__
 Based on my own experience + community feedback. You are not forced to follow this recommended list.
-### Linux Mint ([Post-Install guide](https://github.com/Tenama-hub/Linux_guide_for_Legion_laptops_-_handhelds/blob/main/linux_mint_post_install_guide.md))
+### Linux Mint ([Post-Install guide](https://github.com/Tenama-hub/Linux_guide_for_Legion/blob/main/linux_mint_post_install_guide.md))
 * Comes with Cinnamon/XFCE/Mate (replicate windows 7/10 layout)
 * Comes with many useful tools OOTB
 * Customizable touchpad gestures like on Windows (Cinnamon only)
@@ -22,7 +22,7 @@ Based on my own experience + community feedback. You are not forced to follow th
 * Stable release distribution   
 o Lags behind some of the newer technologies and packages. May cause issues on newer legion laptops   
 o Still uses X11, which is behind certain modern features (dual screens may not work as intended for example)
-### Fedora ([Post-Install Guide](https://github.com/Tenama-hub/Linux_guide_for_Legion_laptops_-_handhelds/blob/main/fedora_post_install_guide.md))
+### Fedora ([Post-Install Guide](https://github.com/Tenama-hub/Linux_guide_for_Legion/blob/main/fedora_post_install_guide.md))
 * Comes with Gnome/Plasma by default. Offers different flavors of desktops too
 * Power saving tools pre-installed
 * Offers the "vanilla" experience that desktop developers have envisioned
@@ -30,7 +30,7 @@ o Still uses X11, which is behind certain modern features (dual screens may not 
 * Semi-Rolling release distribution    
 o Codecs & Nvidia drivers are not pre-installed   
 o Requires a little knowledge and maintanence when necessary due to it being semi-rolling
-### Ubuntu ([Post-install guide](https://github.com/Tenama-hub/Linux_guide_for_Legion_laptops_-_handhelds/blob/main/ubuntu_post_install_guide.md))
+### Ubuntu ([Post-install guide](https://github.com/Tenama-hub/Linux_guide_for_Legion/blob/main/ubuntu_post_install_guide.md))
 - Comes with Gnome by default. Can use other variants with different desktops
 - Pre-install Nvidia drivers and codecs during the installation process
 - Pretty good documentation & huge active base
