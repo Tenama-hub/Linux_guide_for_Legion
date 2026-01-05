@@ -265,7 +265,7 @@ sudo rpm-ostree kargs --append-if-missing=firmware_class.path=/etc/firmware
 * Don't distro-hop because some shiny new distribution hit the web or some distro promises better this & that. Remember : Distributions are just vanilla Linux with packages and such. They are all the same, but maintained differently.
 * Don't bloat your distribution with custom repositories, unless you feel adventurous.
 ### Useful websites
-To check if your games work on linux, these two websites will help you keep yourself updated:
+To check if your games work on linux, these two websites will help you keep yourself updated:   
 https://areweanticheatyet.com/   
 https://www.protondb.com/   
 https://appdb.winehq.org/
