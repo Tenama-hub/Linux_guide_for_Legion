@@ -266,9 +266,9 @@ sudo rpm-ostree kargs --append-if-missing=firmware_class.path=/etc/firmware
 * Don't bloat your distribution with custom repositories, unless you feel adventurous.
 ### Useful websites
 To check if your games work on linux, these two websites will help you keep yourself updated:
-https://areweanticheatyet.com/
-https://www.protondb.com/
+https://areweanticheatyet.com/   
+https://www.protondb.com/   
 https://appdb.winehq.org/
 ### Websites for linux news (desktops, distributions etc)
-https://9to5linux.com/
+https://9to5linux.com/   
 https://gamingonlinux.com/
