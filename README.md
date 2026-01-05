@@ -7,7 +7,6 @@ Contribution is always welcomed! Feel free to join our [discord group as well](h
 ### [Installing Legion tools and drivers](https://github.com/Tenama-hub/Linux_guide_for_Legion_laptops_-_handhelds/tree/main?tab=readme-ov-file#installing-legion-tools-and-drivers-1)
 ### [Apps & Tools recommendation](https://github.com/Tenama-hub/Linux_guide_for_Legion_laptops_-_handhelds/tree/main?tab=readme-ov-file#app--tools-recommendation)
 ### [Battery saving tools](https://github.com/Tenama-hub/Linux_guide_for_Legion_laptops_-_handhelds/tree/main?tab=readme-ov-file#battery-saving-tools-1)
-### [Switchable Graphics](https://github.com/Tenama-hub/Linux_guide_for_Legion_laptops_-_handhelds/tree/main?tab=readme-ov-file#switchable-graphics-1)
 ### [Wine front-ends](https://github.com/Tenama-hub/Linux_guide_for_Legion_laptops_-_handhelds/tree/main?tab=readme-ov-file#wine-front-ends-1)
 ### [NVIDIA fixes](https://github.com/Tenama-hub/Linux_guide_for_Legion_laptops_-_handhelds/tree/main?tab=readme-ov-file#nvidia-fixes-1)
 ### [General bugs and fixes](https://github.com/Tenama-hub/Linux_guide_for_Legion_laptops_-_handhelds/tree/main?tab=readme-ov-file#general-bugs-and-fixes-1)
@@ -160,20 +159,6 @@ After installing it, you can use the app by typing:
 ```sudo powertop```   
 If you want to use it to optimize the hardware power usage (power-profiles/auto-cpufreq ONLY), run this command:   
 ```sudo powertop --calibrate && sudo powertop --auto-tune```
-
-# __Switchable graphics__
-Mostly for NVIDIA users. Sometimes the GPU won't stay offline, so you may need to turn it off through such scripts. If you use Wayland or you are confident enough your GPU won't be turned on by an app when not needed, skip this.
-### WARNING
-* Same rules apply for this section too. Use only **ONE** of the tools below. Uninstall the current ones you have **BESIDES** the tool you want to use. The tool bundled with your distro may be just enough (that is if it provides one)
-* Your mileage may vary! 
-### Supergfxctl
-Allows you to easily switch between gpu profiles without rebooting (depends on how it is configured). Comes with a VFIO mode for QEMU/KVM machines with gpu pass-through configurations (needs to be manually enabled in the config file). Pre-installed on Bazzite.
-[More details here](https://gitlab.com/asus-linux/supergfxctl)
-### Prime-Select
-Usually found in distributions based off Ubuntu. Automatically installed upon installing the Nvidia drivers. It is barebones & simple to use. Might not work well on newer released legion laptops.
-### EnvyControl
-Allows changing between GPU profiles through the CLI or by using desktop plugins. It's a middle-ground between Prime-Select and Supergfxctl, but may cause problems with some hardware configurations and/or X11/Wayland sessions.
-[More details here](https://github.com/bayasdev/envycontrol)
 
 # __Wine front-ends__
 [Wine](https://www.winehq.org/) is a special tool that allows running Windows apps in Linux. This sparked the creation of proton, that is actively used for games.
