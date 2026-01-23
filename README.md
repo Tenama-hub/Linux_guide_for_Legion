@@ -19,7 +19,7 @@ Based on my own experience + community feedback. You are not forced to follow th
 * Customizable touchpad gestures like on Windows (Cinnamon only)
 * Fantastic for daily use, especially for beginners
 * Stable release distribution   
-o Lags behind some of the newer technologies and packages. May cause issues on newer legion laptops   
+o Lags behind some of the newer technologies and packages, which may cause issues on newer hardware   
 o Still uses X11, which is behind certain modern features (dual screens may not work as intended for example)
 ### Fedora ([Post-Install Guide](https://github.com/Tenama-hub/Linux_guide_for_Legion/blob/main/fedora_post_install_guide.md))
 * Comes with Gnome/Plasma by default. Offers different flavors of desktops too
