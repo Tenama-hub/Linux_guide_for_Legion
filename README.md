@@ -178,7 +178,8 @@ Setting your swappiness to 10 will reduce stuttering when your RAM memory is alm
 ```sudo nano /etc/sysctl.conf```
 Add ```vm.swappiness=10``` Then save. (ctrl+O then hit enter)
 ### Bad speakers quality 
-If your speakers sound shallow and bad, try out [this preset](https://github.com/Tomiscout/Lenovo-Legion-5-Pro-Linux-guide/tree/main/easyeffects) (I might tweak it to not require easyeffects. Stay tuned!). If you use handhelds, [better give this one a try](https://www.reddit.com/r/LegionGo/comments/1m7632y/legion_go_s_steam_os_audio_fix_pipewire_eq/).
+If your speakers sound shallow and bad, try out [this preset](https://github.com/Tomiscout/Lenovo-Legion-5-Pro-Linux-guide/tree/main/easyeffects). If you use handhelds, [better give this one a try](https://www.reddit.com/r/LegionGo/comments/1m7632y/legion_go_s_steam_os_audio_fix_pipewire_eq/).
+If you don't want to use Easyeffects for your legion laptop, extract the pipewire folder in .config, open convolver-sink.conf and change YOURUSERNAME with your linux's username. Restart pipewire and change your sound profile in settings.
 ### Bad laptop mic quality
 Set your microphone volume to 30-50%, then install this [noise cancelling module](https://github.com/Rikorose/DeepFilterNet/blob/main/ladspa/README.md) or use EasyEffects
 ### Refresh rate/ VRR not working
