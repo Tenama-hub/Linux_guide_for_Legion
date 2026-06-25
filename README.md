@@ -16,20 +16,23 @@ https://appdb.winehq.org/
 ### Websites for linux news (desktops, distributions etc)
 https://9to5linux.com/<br>
 https://gamingonlinux.com/
+###
+<br>
+
 # __Distribution recommendation__
 Based on my own experience + community feedback. Treat this as a way to begin your Linux journey. These are mainstream, well-known, supported linux distributions with huge userbases and documentation.
 | Name | Pros | Cons | Links |
 | ------------- | ------------- | ------------- | ------------- |
 | **[Fedora](https://fedoraproject.org/)** | • Comes with GNOME or KDE Plasma by default, alongside multiple desktop flavors.<br>• Provides a near-vanilla Linux desktop experience.<br>• Up-to-date drivers with strong focus on stability.<br>• Excellent documentation and large community support.<br>• Security-focused defaults.<br>• Semi-rolling release model. | • Nvidia drivers and codecs require manual setup.<br>• Secure Boot setup requires manual signing post-install. | [Post-Install Guide](https://github.com/Tenama-hub/Linux_guide_for_Legion/blob/main/fedora_post_install_guide.md) |
 | **[OpenSUSE Tumbleweed](https://www.opensuse.org/)** | • Ships with GNOME or KDE Plasma by default.<br>• Rolling-release distro with strong stability focus.<br>• Secure Boot configured by default.<br>• Includes Snapper for easy system rollback after bad updates.<br>• Excellent hardware package optimizations.<br>• Available in both rolling-release (Tumbleweed) and LTS (Leap) variants.<br>• Strong documentation. | • Nvidia drivers and codecs require manual setup.<br>• YaST/sysadmin tools may feel overwhelming for beginners.<br>• The installer can sometimes bork itself, pre or post-install. The network install ISO seems to work better in this regard. | [Post-Install Guide](https://youtu.be/0T02xd9qVmM?si=_op_kdpDzYjRkK5F) |
-| **[Linux Mint](https://linuxmint.com/)** | • Comes with Cinnamon/XFCE/Mate (layout resemble Windows 7/10).<br>• Ships with many useful tools pre-installed.<br>• Cinnamon edition supports customizable touchpad gestures.<br>• Stable release model focused on reliability. | • Uses older package bases and technologies, which may affect newer hardware support.<br>• Still relies on X11, which is behind certain modern features (dual screens may not work as intended for example).<br>• Secure Boot setup requires manual signing post-install. | [Post-Install Guide](https://github.com/Tenama-hub/Linux_guide_for_Legion/blob/main/linux_mint_post_install_guide.md) |
+| **[Linux Mint](https://linuxmint.com/)** | • Comes with Cinnamon as the primary desktop environment (Other editions offer XFCE/MATE).<br>• Ships with many useful tools pre-installed.<br>• Cinnamon edition supports customizable touchpad gestures.<br>• Stable release model focused on reliability. | • Uses older package bases and technologies, which may affect newer hardware support.<br>• Still relies on X11, which is behind certain modern features (dual screens may not work as intended for example).<br>• Secure Boot setup requires manual signing post-install. | [Post-Install Guide](https://github.com/Tenama-hub/Linux_guide_for_Legion/blob/main/linux_mint_post_install_guide.md) |
 
 If you feel adventurous...
 | Name | Pros | Cons | Links |
 | ------------- | ------------- | ------------- | ------------- |
 | **[Bazzite](https://bazzite.gg/)** | • Comes with Plasma/Gnome by default<br>• Pre-installed Steam, Nvidia drivers and codecs<br>• Can be used for any use case, not just gaming<br>• Great alternative to SteamOS<br>• Very hard to break and requires little to no maintenance due to its "atomic" nature<br>• Atomic distribution based on Fedora. Updates can be done in the background and are relatively quick | • Apps can only be installed as Flatpaks, AppImages, HomeBrew or through Distrobox/Kontainer.<br>• You cannot do system-level changes like on traditional distros, unless you create your own fork of the project.<br>• Support outside their official Discord leaves more to be desired.<br>• No secure boot post-install. Needs to be signed manually (can be done through Ujust) |  |
 | **[EndeavourOS](https://endeavouros.com/)** | • Comes with Plasma by default. Can install a different desktop environment during the installation process (same for the bootloader)<br>• Pure Arch Linux experience, with several tools and tuning done to get you up and running<br>• Bleeding edge distribution based on Arch Linux, which means you will get frequent updates<br>• Nvidia drivers pre-installed<br>• Great documentation & community | • More terminal focused, as it doesn't come bundled with a GUI package manager.<br>• Updates can go bad due to it's bleeding edge nature and you will experience several bugs here and there.<br>• AUR isn't the safeset place to get your packages from.<br>• Requires prior linux knowledge in order to properly use it. Not suitable for newbies or for production environments.<br>• No secure boot post-install. Needs to be signed manually. | |
-| **[CachyOS](https://cachyos.org/)** | • Comes with Plasma by default. Can install a different desktop environment during the installation process (same for the bootloader)<br>• Pre-configured snapshots in case updates go bad (If you choose BTRFS+Limine by default)<br>• One-click install for gaming packages (Steam, Lutris, Heroic, Mangohud with Goverlay + libraries needed) + nvidia drivers pre-installed<br>• A functional software center that allows installing AUR and Flatpaks<br>• Bleeding edge distribution based on Arch Linux, which means you will get frequent updates<br>• Optimized for your hardware, meaning you can get a boost in performance<br>• Great documentation | • "Optimizations" only apply to certain specific scenarios (Gaming isn't one of them).<br>• Updates can go bad due to it's bleeding edge nature and you will experience several bugs here and there.<br>• AUR isn't the safeset place to get your packages from.<br>• Requires prior linux knowledge in order to properly use it. Not suitable for newbies or for production environments.<br>• No secure boot post-install. Needs to be signed manually. | [Post-Install guide](https://wiki.cachyos.org/configuration/post_install_setup/) |
+| **[CachyOS](https://cachyos.org/)** | • Comes with Plasma by default. Can install a different desktop environment during the installation process (same for the bootloader)<br>• Pre-configured snapshots in case updates go bad (If you choose BTRFS+Limine by default)<br>• One-click install for gaming packages (Steam, Lutris, Heroic, Mangohud with Goverlay + libraries needed) + nvidia drivers pre-installed<br>• A functional software center that allows installing AUR and Flatpaks<br>• Bleeding edge distribution based on Arch Linux, which means you will get frequent updates<br>• Optimized for your hardware, meaning you can get a boost in performance<br>• Great documentation | • "Optimizations" can be a hit or miss on some scenarios.<br>• Updates can go bad due to it's bleeding edge nature and you will experience several bugs here and there.<br>• AUR isn't the safeset place to get your packages from.<br>• Requires prior linux knowledge in order to properly use it. Not suitable for newbies or for production environments.<br>• No secure boot post-install. Needs to be signed manually. | [Post-Install guide](https://wiki.cachyos.org/configuration/post_install_setup/) |
 
 # __Distributions to reconsider using__
 | Name | Reason |
@@ -41,7 +44,23 @@ If you feel adventurous...
 | **Manjaro** | It's future is uncertain as it has a history of a lot of wrongdoings, strange decisions and updates that led to broken systems or significant bugs. Is currently on a hiatus due to [disagreements and developers being on strike](https://forum.manjaro.org/t/manjaro-2-0-manifesto/186171). There are much better options out there. |
 | **Hacking/Cybersecurity distributions** | Parrot, Tails, Kali Linux and alike are meant to be used either through VMs or external devices, not on actual hardware. |
 | **Obscure/outdated distributions** | Avoid distributions maintained by randoms/single developer, that are **"too good to be true"** (nonsense promises) or try to replicate Windows 1:1. |
-| **Hobby/niche distributions** | Do keep in mind you won't have any guarantee they won't die off in the future or have proper support outside their forums (forums being just a Discord server). They also come with problems of their own, such as: unorthodox way of handling packages (some packages are updates often more than others, for example), low-quality in-house tools, kernel problems, questionable community, low amount of maintainers etc. <br> Some example of such distros are Nobara, RegataOS, Garuda, ZorinOS, PikaOS etc. |
+| **Hobby/niche distributions** | Do keep in mind you won't have any guarantee they won't die off in the future or have proper support outside their forums (forums being just a Discord server). They also come with problems of their own, such as: unorthodox way of handling packages (some packages are updates often more than others, for example), low-quality in-house tools, kernel problems, questionable community, low amount of maintainers etc. <br> Some example of such distros are **Nobara, RegataOS, Garuda, ZorinOS, PikaOS** etc. |
+###
+<br>
+
+# __Desktop environments (DE)__
+Linux does not have a single desktop experience. There are plenty of them, each with their own pros, cons & querks. This part of the guide should give a brief summary or the most popular desktop environments that are provided by default on almost all distributions out there. <br>
+For the tech nerds, I will **not** cover window managers. <br>
+Based on my own experience + community feedback.
+| Name | Pros | Cons |
+| ------------- | ------------- | ------------- |
+| [**KDE Plasma**](https://kde.org/plasma-desktop/) | <br>• Provides a Windows-like desktop experience. <br>• Highly customizable OOTB + plenty of plugins in [KDE Store](https://store.kde.org/browse/). <br>• Has the most development for gaming & general use than other desktops. <br>• Not very taxing on hardware resources <br>• Is updated pretty regularly. | <br>• Settings can feel overwhelming & get easily lost. <br>• Some of the default apps are pretty average. <br>• Bugs & stability issues may occur (althought very rare nowadays.) |
+| [**Gnome**](https://www.gnome.org/) | <br>• Provides a MacOS-like experience, fixated on simplicity. <br>• [Has plenty of extensions](https://extensions.gnome.org/) to customize your desktop environment. <br>• Default apps are beautifully designed & has the best animations (hands down) <br>• Not very taxing on hardware resources (by default) <br>• Is updated every ~6 months. | <br>• Extensions can break on desktop updates. <br>• Certain querks & bugs can be off-putting for some users. <br>• Some settings are behind certain 3rd party apps. <br>• Inconsistency with some non-gnome apps. <br>• Is very opinionated. | 
+| [**Cinnamon**](https://en.wikipedia.org/wiki/Cinnamon_(desktop_environment)) | <br>• Provides a Windows 7/10 like experience, based on Gnome <br>• Default apps are simple & easy to use for fresh converts. <br>• Touchpad gestures for laptop users. <br>• Has its fair share of customizations + [Plugin store](https://cinnamon-spices.linuxmint.com/extensions)  | <br>• Still based on X11, which is legacy at this point. <br>• Plugin store is quite lacking compared to Plasma/Gnome offerings. <br>• Is updated yearly (not a really big con, considering Linux Mint's stable nature) | 
+| [**XFCE**](https://xfce.org/) | <br>• Provides a Windows(XP/7)-like experience. <br>• Is very basic & fast (lacks animations by default) <br>• Pretty customizable, considering it's very minimalistic nature. <br>• Default apps are simple & easy to use <br>• Runs on pretty much any hardware & has very low hardware requirements. | <br>• Customizaion is quite lacking + doesn't offer a plugin store. <br>• Doesn't have the same gaming/general use tweaks like Plasma/Gnome. <br>• Is updated once in a blue moon (not a really big con, depending on your perspective). |
+| [**Cosmic**](https://system76.com/cosmic) | <br>• Provides a MacOS-like experience. <br>• Developed for performance, productivity and gaming in mind. <br>• Has its fair share of customization options. <br>• Default apps are pretty good (a combination of Gnome's simplicity & Plasma's usability). <br>• Is updated regularly. | <br>• Still not finished & in alpha. Has a lot of bugs that affect daily usage. <br>• Lack of customization outside their offerings (for now...) |
+###
+<br>
 
 # __Installing Legion tools and drivers (LEGACY)__ 
 > [!WARNING]
@@ -64,6 +83,8 @@ The project's [github page](https://github.com/johnfanv2/LenovoLegionLinux?tab=r
 After it's done, to check if module is built and installed correctly, enter the following command
 ```sudo lsmod |grep legion_laptop```\
 The output should show that legion_laptop and platform profile modules are loaded.
+###
+<br>
 
 # __App & Tools recommendation__
 | App  | Description |
@@ -75,7 +96,10 @@ The output should show that legion_laptop and platform profile modules are loade
 | [Flatseal](https://flathub.org/en/apps/com.github.tchx84.Flatseal) | Manage Flatpak permissions. Especially useful on non-KDE Plasma distributions. |
 | [Gear Lever](https://flathub.org/en/apps/it.mijorus.gearlever) | Front-end AppImage manager that allows installing and managing AppImage packages without manually handling them in the file manager. |
 | [PeaZip](https://flathub.org/en/apps/io.github.peazip.PeaZip) | A powerful and user-friendly alternative to WinRAR and 7-Zip for archive management. |
-| [WinBoat](https://www.winboat.app/)  | A powerful app that allows running Windows apps through a VM that seamlessly integrates with your system. The VM is lightweight and easy to configure. It (currently) does not support GPU pass-through, so GPU accelerated apps (including games) will not run or will run but slower. |
+| [WinBoat](https://www.winboat.app/)  | A powerful app that allows running Windows apps through a VM that seamlessly integrates with your system. The VM is lightweight and easy to configure. It (currently) does not support GPU pass-through, so GPU accelerated apps (including games) will not run or will run but slower. | 
+###
+<br>
+
 # __Battery saving tools__
 The tool that comes bundled with your distribution of choice should be good enough. For advanced users only!
 > [!WARNING]
@@ -89,6 +113,9 @@ The tool that comes bundled with your distribution of choice should be good enou
 | [TLP](https://linrunner.de/tlp/index.html) | Advanced power management tool that applies extensive optimizations depending on whether the system is running on battery or AC power. Highly configurable, but incorrect setup can cause issues. Conflicts with other power management tools. GUI frontend available through [TLPUI](https://github.com/d4nj1/TLPUI). |
 | [Auto-Cpufreq](https://github.com/AdnanHodzic/auto-cpufreq) | Lightweight automatic CPU power optimization tool that dynamically adjusts CPU scaling and governors based on battery or AC status. Works well with `pstate`, though some hardware may experience compatibility issues. |
 | [Powertop](https://wiki.archlinux.org/title/Powertop) | Terminal-based power analysis and tuning utility for monitoring system power consumption and enabling hardware power-saving optimizations. Best used for diagnosing power draw, since most automatic optimizations are already handled by other tools. |
+###
+<br>
+
 # __Wine front-ends__
 [Wine](https://www.winehq.org/) is a special tool that allows running Windows apps in Linux. This sparked the creation of proton, that is actively used for games.
 | App | Description |
@@ -97,6 +124,9 @@ The tool that comes bundled with your distribution of choice should be good enou
 | [Heroic Games Launcher](https://heroicgameslauncher.com/) | Open-source launcher for managing games from Epic Games Store, GOG, Amazon Games, Humble Bundle, Ubisoft Connect, Origin, and local backups. Includes built-in Wine and Proton management tools. |
 | [Faugus Launcher](https://github.com/Faugus/faugus-launcher) | Lightweight and easy-to-use launcher built around UMU. Less feature-rich, but provides a simpler and more straightforward experience without unnecessary complexity. |
 | [Port-Proton](https://github.com/Castro-Fidel/PortWINE) | User-friendly launcher focused on simplifying Wine game setup and launcher installation. Includes a custom prefix with preinstalled .NET frameworks and various configuration tools. It has some usability limitations, slower startup times, and fewer advanced customization options compared to alternatives. Best used as a fallback option. |
+###
+<br>
+
 # __General bugs and fixes__
 <details>
 <summary>Fix laptop speakers not working (Gen 10 Legions)</summary>
