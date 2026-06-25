@@ -1,4 +1,4 @@
-# Ubuntu post-install guide
+# Ubuntu/Kubuntu post-install guide
 
 
 | Tweak Name | Command/Link/Path |
