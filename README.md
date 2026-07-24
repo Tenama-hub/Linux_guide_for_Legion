@@ -1,5 +1,7 @@
 # 🐧 Linux guide for Legion laptops, handhelds & PCs 🐧
 
+Feel free to join our [discord group as well](https://discord.gg/legionseries). 
+
 # __General advice and websites recommendation__
 * **It's best to do research on how to use Linux instead of jumping ship and expect the same workflow as on Windows. This is one of the many newbie traps!!**
 * Don't install packages from the internet unless necessary. Always trust your **SOFTWARE/PACKAGE MANAGER** bundled with your distribution.
