@@ -132,6 +132,23 @@ The tool that comes bundled with your distribution of choice should be good enou
 
 # __General bugs and fixes__
 <details>
+<summary>Fix games stuttering/lagging/bugging out only on Legions</summary>
+  
+Some legion hardware have a problem where some games will randomly stutter or lag more than other devices with the same specs. This is caused by [HPET](https://en.wikipedia.org/wiki/High_Precision_Event_Timer). To check if you have it enabled, run this command: \
+`cat /sys/devices/system/clocksource/clocksource0/current_clocksource` \
+If it shows HPET, then you will have to change it to TSC. Check if you have it: \
+`cat /sys/devices/system/clocksource/clocksource0/available_clocksource` \
+If it doesn't show up, you will have to do the following: \
+1. Use a Kernel that patches TSC (Like CachyOS's kernel)
+2. Patch it automatically to your current kernel by [using this patch](https://github.com/CachyOS/linux-cachyos/issues/925).
+
+After you did one of the two, you will have to add `tsc=directsync` in your bootloader.
+
+Even if you have TSC enabled and your games have dubious anomalies, give this one a try. (for example: Risk of rain 2 exaggerated loading times/audio stuttering, Death stranding stuttering/sped up animations, games have crackling in audio or lesser fps than the usual)
+
+</details>
+
+<details>
 <summary>Fix laptop speakers not working (Gen 10 Legions)</summary>
   
 * You will need [this special driver](https://github.com/marco-giunta/legion-pro7-gen10-audio), until it gets pushed in the kernel.
