@@ -205,15 +205,17 @@ For the below commands, replace **{display_id}** with the output of the connecte
 
 | Name | Command |
 |-------------|-------------|
-| **systemd-boot** | `sudo kernelstub -a 'drm.edid_firmware={display_id}:edid/edid.bin video={display_id}:e'` |
-| **GRUB** | `sudo nano /etc/default/grub`<br>Add `drm.edid_firmware={display_id}:edid/edid.bin video={display_id}:e` to `GRUB_CMDLINE_LINUX_DEFAULT`<br><br>Then run one of the following:<br>`sudo update-grub`<br>OR<br>`sudo grub2-mkconfig -o /boot/grub2/grub.cfg` |
+| **systemd-boot** | `sudo kernelstub -a 'drm.edid_firmware={display_id}:edid/edid.bin'` |
+| **GRUB** | `sudo nano /etc/default/grub`<br>Add `drm.edid_firmware={display_id}:edid/edid.bin` to `GRUB_CMDLINE_LINUX_DEFAULT`<br><br>Then run one of the following:<br>`sudo update-grub`<br>OR<br>`sudo grub2-mkconfig -o /boot/grub2/grub.cfg` |
 
   
 Reboot. <br>
-For Immutable/atomic distros based on Fedora( e.g. Bazzite), use the following (make sure you replace {display_id} with the output from number 4, as well as path-to-file with the actual path):
-| Name | Command |
-|------|---------|
-| **Immutable/Atomic** | `sudo mkdir -p /etc/firmware/edid`<br>`sudo cp (path-to-file)/edid.bin /etc/firmware/edid`<br>`sudo rpm-ostree kargs --append-if-missing=drm.edid_firmware={display_id}:edid/edid.bin`<br>`sudo rpm-ostree kargs --append-if-missing=video={display_id}:e`<br><br>**In case it hasn't fixed yet, run these 2 as well:**<br>`sudo echo 'install_items+=" /etc/firmware/edid/edid.bin "' | sudo tee /etc/dracut.conf.d/edid.conf`<br>`sudo rpm-ostree kargs --append-if-missing=firmware_class.path=/etc/firmware` |
+For Immutable/atomic distros based on Fedora( e.g. Bazzite), use the following (make sure you replace {display_id} with the output from number 4, as well as path-to-file with the actual path): \
+`sudo mkdir -p /etc/firmware/edid`<br>`sudo cp (path-to-file)/edid.bin /etc/firmware/edid`<br>`sudo rpm-ostree kargs --append-if-missing=drm.edid_firmware={display_id}:edid/edid.bin`<br><br>**In case it hasn't fixed yet, run these 2 as well:**<br>`sudo echo 'install_items+=" /etc/firmware/edid/edid.bin "' | sudo tee /etc/dracut.conf.d/edid.conf`<br>`sudo rpm-ostree kargs --append-if-missing=firmware_class.path=/etc/firmware`
+
+If you switch between hybrid and dedicated mode, you may encounter issues with your display. This can be fixed by adding the other display (run step 4) in the edid firmware variable like so (replace display_id with your current display id in hybrid and display_id_2 with the display id in dedicated graphics): \
+```drm.edid_firmware={display_id}:edid/edid.bin,{display_id_2}:edid/edid.bin``` \
+If none of these commands/variables work, you will have to also add ```video={display_id}:e```.
 </details>
 
 
